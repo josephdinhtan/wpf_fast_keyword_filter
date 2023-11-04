@@ -8,6 +8,8 @@
         Title="Fast Filter" Height="250" Width="300"
         ResizeMode="NoResize"
         WindowStartupLocation ="CenterScreen"
+        ShowActivated="False"
+        Focusable="False"
         ShowInTaskbar="True">
 
     <Grid>
@@ -49,8 +51,8 @@
                     </StackPanel>
 
                     <StackPanel VerticalAlignment="Center">
-                        <Button Content="Open DB" Margin="10" Padding="10" Click="OpenDbClicked"/>
-                        <Button Content="Reload DB" Margin="10" Padding="10" Click="ReloadDbClicked"/>
+                        <Button Content="Open xml" Margin="10" Padding="10" Click="OpenDbClicked"/>
+                        <Button Content="Save and apply" Margin="10" Padding="10" Click="ReloadDbClicked"/>
                     </StackPanel>
                 </DockPanel>
             </TabItem>

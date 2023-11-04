@@ -33,7 +33,7 @@ namespace Wpf_Fast_Filter
     {
 
         private int numberOfHotkeyTriggered = 0;
-        private const int PANNEL_CLOSE_TIMER = 0;
+        private const int PANNEL_CLOSE_TIMER = 10;
         System.Windows.Threading.DispatcherTimer closeKeywordPannelTimer = new System.Windows.Threading.DispatcherTimer();
         public MainWindow()
         {

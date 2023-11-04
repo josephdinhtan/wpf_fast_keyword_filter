@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 using System.Xml;
 using Wpf_Fast_Filter;
 using WpfFastFilter.Utils;
@@ -24,7 +25,7 @@ namespace WpfFastFilter.DataBase
         {
             try
             {
-                var path = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+                var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                 XmlTextReader textReader = new XmlTextReader(path + "\\keywords.xml");
                 textReader.Read();
                 keywords.Clear();
@@ -94,16 +95,17 @@ namespace WpfFastFilter.DataBase
 
         public static void openDataBase()
         {
-            var pathDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            var file = "Unknow file";
+            var pathDirectory = "Unknow Directory";
             try
             {
-                var file = Path.Combine(pathDirectory, "keywords.xml");
+                pathDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+                file = pathDirectory + "\\keywords.xml";
                 Process.Start("notepad.exe", file);
             }
             catch (Exception ex)
             {
-
-                System.Windows.MessageBox.Show("OpenDataBase Exception: " + ex.Message, "Fast Filter");
+                System.Windows.MessageBox.Show("OpenDataBase Exception: \n file: " + file + "\n dir: " + pathDirectory + "\n" + ex.Message, "Fast Filter");
             }
         }
     }
