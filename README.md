@@ -12,9 +12,13 @@
 
 ## Download
 
-Download the [latest release](https://github.com/josephdinhtan/wpf_fast_keyword_filter/blob/main/BuildReleases/download/):
-[`fast-filter-v2.2.zip`][direct-win64]
+Download the [latest release]:
+
+ - [`fast-filter-v2.2.zip`][direct-win64] (64-bit)
+
+[latest release]: https://github.com/josephdinhtan/wpf_fast_keyword_filter/blob/main/BuildReleases/download/
 [direct-win64]: https://github.com/josephdinhtan/wpf_fast_keyword_filter/blob/main/BuildReleases/download/v1.1/v1.1.7z
+
 
 ## How to use it?
 
