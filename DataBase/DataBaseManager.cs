@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -25,8 +26,8 @@ namespace WpfFastFilter.DataBase
         {
             try
             {
-                var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-                XmlTextReader textReader = new XmlTextReader(path + "\\keywords.xml");
+                var xmlPath = JUtinity.getDirectoryPath() + "\\keywords.xml";
+                XmlTextReader textReader = new XmlTextReader(xmlPath);
                 textReader.Read();
                 keywords.Clear();
                 while (textReader.Read())
@@ -90,23 +91,6 @@ namespace WpfFastFilter.DataBase
                 contextMenu.Items.Add(item);
             });
             return contextMenu;
-        }
-
-
-        public static void openDataBase()
-        {
-            var file = "Unknow file";
-            var pathDirectory = "Unknow Directory";
-            try
-            {
-                pathDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-                file = pathDirectory + "\\keywords.xml";
-                Process.Start("notepad.exe", file);
-            }
-            catch (Exception ex)
-            {
-                System.Windows.MessageBox.Show("OpenDataBase Exception: \n file: " + file + "\n dir: " + pathDirectory + "\n" + ex.Message, "Fast Filter");
-            }
         }
     }
 }

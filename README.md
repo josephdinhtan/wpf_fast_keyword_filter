@@ -14,10 +14,10 @@
 
 Download the [latest release]:
 
- - [`fast-filter-v2.2.zip`][direct-win64] (64-bit)
+ - [`FastFilter-win-x64-v1.2.zip`][direct-win64] (64-bit)
 
 [latest release]: https://github.com/josephdinhtan/wpf_fast_keyword_filter/blob/main/BuildReleases/download/
-[direct-win64]: https://github.com/josephdinhtan/wpf_fast_keyword_filter/blob/main/BuildReleases/download/v1.1/v1.1.7z
+[direct-win64]: https://github.com/josephdinhtan/wpf_fast_keyword_filter/blob/main/BuildReleases/download/v1.2/FastFilter-win-x64-v1.2.zip
 
 
 ## How to use it?
@@ -37,3 +37,5 @@ After change and update xml file, don't forget `Save and apply`
 ```
 
 Now press `Ctrl+Alt+F` to see the magic
+
+![screenshot](screenshots/ScreenshotNotepad++UseCase.png)

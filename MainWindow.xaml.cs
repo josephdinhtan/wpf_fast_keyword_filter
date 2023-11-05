@@ -118,7 +118,7 @@ namespace Wpf_Fast_Filter
 
         private void OpenDbClicked(object sender, RoutedEventArgs e)
         {
-            DataBaseManager.openDataBase();
+            JUtinity.openDataBase();
         }
 
         private void ReloadDbClicked(object sender, RoutedEventArgs e)
