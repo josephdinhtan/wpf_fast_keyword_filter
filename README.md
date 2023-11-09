@@ -38,4 +38,4 @@ After change and update xml file, don't forget `Save and apply`
 
 Now press `Ctrl+Alt+F` to see the magic
 
-![screenshot](screenshots/ScreenshotNotepad++UseCase.png)
+![Alt Text](screenshots/FillKeyword.gif)
